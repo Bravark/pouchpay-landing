@@ -1,0 +1,128 @@
+.legal-page {
+  min-height: 100vh;
+  padding: var(--space-6xl) 0;
+  background: var(--bg-primary);
+}
+
+.legal-header {
+  text-align: center;
+  margin-bottom: var(--space-4xl);
+  padding-bottom: var(--space-2xl);
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.legal-header h1 {
+  margin-bottom: var(--space-m);
+}
+
+.legal-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.legal-content section {
+  margin-bottom: var(--space-3xl);
+}
+
+.legal-content h2 {
+  margin-bottom: var(--space-l);
+  margin-top: var(--space-2xl);
+}
+
+.legal-content h3 {
+  margin-bottom: var(--space-m);
+  margin-top: var(--space-xl);
+  color: var(--fg-2);
+}
+
+.legal-content p {
+  margin-bottom: var(--space-l);
+  line-height: 1.7;
+}
+
+.legal-list {
+  list-style: none;
+  margin: var(--space-l) 0;
+  padding: 0;
+}
+
+.legal-list li {
+  padding-left: var(--space-xl);
+  margin-bottom: var(--space-m);
+  position: relative;
+  line-height: 1.7;
+}
+
+.legal-list li::before {
+  content: '•';
+  position: absolute;
+  left: var(--space-m);
+  color: var(--text-cyan);
+  font-size: 1.2em;
+}
+
+.legal-contact {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-l);
+  padding: var(--space-xl);
+  margin: var(--space-l) 0;
+}
+
+.legal-contact p {
+  margin-bottom: var(--space-m);
+}
+
+.legal-contact p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-contact a {
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.legal-contact a:hover {
+  opacity: 0.8;
+}
+
+.legal-footer {
+  max-width: 800px;
+  margin: var(--space-4xl) auto 0;
+  padding-top: var(--space-2xl);
+  border-top: 1px solid var(--border-primary);
+  text-align: center;
+}
+
+.legal-footer a {
+  color: var(--text-cyan);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.legal-footer a:hover {
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .legal-page {
+    padding: var(--space-3xl) 0;
+  }
+
+  .legal-header {
+    margin-bottom: var(--space-2xl);
+  }
+
+  .legal-content {
+    padding: 0 var(--space-l);
+  }
+
+  .legal-content h2 {
+    font-size: var(--font-size-h2);
+  }
+
+  .legal-content h3 {
+    font-size: var(--font-size-h3);
+  }
+}
