@@ -1,0 +1,101 @@
+/**
+ * Button Component Styles - Pouch Design System
+ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-2);
+  border: none;
+  border-radius: var(--r-pill);
+  font-family: var(--font-body);
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform var(--dur) var(--ease),
+              background var(--dur) var(--ease),
+              box-shadow var(--dur) var(--ease),
+              color var(--dur) var(--ease),
+              border var(--dur) var(--ease);
+  white-space: nowrap;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ===== SIZES ===== */
+.btn--small {
+  padding: 8px 14px;
+  font-size: 12.5px;
+}
+
+.btn--default {
+  padding: 12px 20px;
+  font-size: 14px;
+}
+
+.btn--large {
+  padding: 16px 26px;
+  font-size: 15px;
+}
+
+/* ===== VARIANTS ===== */
+
+/* Primary - Gradient cyan button */
+.btn--primary {
+  background: linear-gradient(180deg, oklch(0.86 0.08 215), oklch(0.74 0.12 220));
+  color: var(--primary-ink);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.55) inset,
+    0 8px 24px -8px oklch(0.78 0.14 210 / 0.55);
+}
+
+.btn--primary:hover {
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.55) inset,
+    0 12px 32px -8px oklch(0.78 0.14 210 / 0.7);
+}
+
+/* Secondary - Dark button with border */
+.btn--secondary {
+  background: #0e1525;
+  color: var(--fg-1);
+  border: 1px solid var(--line-strong);
+}
+
+.btn--secondary:hover {
+  background: #131c30;
+  border-color: #34405a;
+}
+
+/* Ghost - Transparent button */
+.btn--ghost {
+  background: transparent;
+  color: var(--fg-2);
+}
+
+.btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--fg-1);
+}
+
+/* Glow - Violet glowing button */
+.btn--glow {
+  background: oklch(0.45 0.18 295 / 0.25);
+  color: #E6DBFF;
+  border: 1px solid oklch(0.66 0.18 295 / 0.55);
+  box-shadow: var(--glow-violet);
+}
+
+.btn--glow:hover {
+  background: oklch(0.45 0.18 295 / 0.35);
+  box-shadow:
+    var(--glow-violet),
+    0 0 80px -8px oklch(0.66 0.18 295 / 0.7);
+}

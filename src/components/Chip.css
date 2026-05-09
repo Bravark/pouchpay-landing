@@ -1,0 +1,44 @@
+/**
+ * Chip Component Styles - Pouch Design System
+ */
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  padding: 5px 10px;
+  border-radius: var(--r-pill);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid var(--line);
+  color: var(--fg-2);
+  white-space: nowrap;
+}
+
+/* ===== VARIANTS ===== */
+
+.chip--violet {
+  background: oklch(0.55 0.18 295 / 0.22);
+  border-color: oklch(0.66 0.18 295 / 0.3);
+  color: #DDCBFF;
+}
+
+.chip--cyan {
+  background: oklch(0.65 0.14 210 / 0.18);
+  border-color: oklch(0.78 0.14 210 / 0.3);
+  color: #C8ECFF;
+}
+
+.chip--lime {
+  background: oklch(0.65 0.18 140 / 0.18);
+  border-color: oklch(0.85 0.18 140 / 0.3);
+  color: #D5F5C0;
+}
+
+.chip--magenta {
+  background: oklch(0.55 0.18 340 / 0.22);
+  border-color: oklch(0.70 0.18 340 / 0.3);
+  color: #FFD3EE;
+}
