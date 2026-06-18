@@ -29,7 +29,7 @@ export default function HowItWorks() {
         <div className="how-it-works__grid">
           <div className="how-it-works__flow">
             <div className="how-it-works__flow-header">
-              <Chip variant="cyan">Onramp</Chip>
+              {/* <Chip variant="cyan">Onramp</Chip> */}
               <h3 className="text-h2">Buy Crypto</h3>
               <p className="text-body fg-3">
                 Convert Nigerian Naira to cryptocurrency
@@ -50,7 +50,7 @@ export default function HowItWorks() {
 
           <div className="how-it-works__flow">
             <div className="how-it-works__flow-header">
-              <Chip variant="lime">Offramp</Chip>
+              {/* <Chip variant="lime">Offramp</Chip> */}
               <h3 className="text-h2">Sell Crypto</h3>
               <p className="text-body fg-3">
                 Convert cryptocurrency to Nigerian Naira

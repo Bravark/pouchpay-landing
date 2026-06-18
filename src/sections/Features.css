@@ -25,9 +25,15 @@
 }
 
 .feature-card__icon {
-  font-size: 48px;
-  line-height: 1;
-  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--r-3);
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  color: #E6DBFF;
 }
 
 .feature-card h3 {

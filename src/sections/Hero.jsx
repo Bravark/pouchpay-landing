@@ -1,5 +1,6 @@
 import Button from '../components/Button';
 import Chip from '../components/Chip';
+import { PouchPayWidget } from '@pouchpay/widget';
 import './Hero.css';
 
 export default function Hero() {
@@ -54,34 +55,20 @@ export default function Hero() {
           </div>
 
           <div className="hero__visual">
-            <div className="hero__card">
-              <div className="hero__card-header">
-                <span className="text-label fg-3">Buy Crypto</span>
-                {/* <Chip variant="lime">Active</Chip> */}
-              </div>
-
-              <div className="hero__amount">
-                <div className="text-body-s fg-3">You Pay</div>
-                <div className="hero__amount-value">
-                  <span className="text-h1">₦50,000</span>
-                  <span className="text-body fg-3">NGN</span>
-                </div>
-              </div>
-
-              <div className="hero__divider"></div>
-
-              <div className="hero__amount">
-                <div className="text-body-s fg-3">You Receive</div>
-                <div className="hero__amount-value">
-                  <span className="text-h1 text-cyan">62.5</span>
-                  <span className="text-body fg-3">USDT</span>
-                </div>
-              </div>
-
-              <div className="hero__rate">
-                <span className="text-mono fg-3">Rate: ₦800 = 1 USDT</span>
-              </div>
-            </div>
+            <PouchPayWidget
+              createSession={{
+                type: 'ONRAMP',
+                walletAddress: '0x742d35Cc6634C0532925a3b844Bc454e4438f44e',
+                cryptoCurrency: 'USDT',
+                cryptoNetwork: 'ERC20',
+                amount: 100,
+                countryCode: 'NG',
+                currency: 'NGN'
+              }}
+              variant="inline"
+              theme="dark"
+              apiKey="6770678da087865b607546b5c822792444824f09d5527533d15a7b1090a49ad3"
+            />
           </div>
         </div>
       </div>

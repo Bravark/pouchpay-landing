@@ -43,7 +43,7 @@ export default function Integration() {
         <div className="integration__grid">
           {integrations.map((integration, index) => (
             <Card key={index} className="integration-card">
-              <Chip variant={integration.tagVariant}>{integration.tag}</Chip>
+              {/* <Chip variant={integration.tagVariant}>{integration.tag}</Chip> */}
               <h3 className="text-h2">{integration.title}</h3>
               <p className="text-body fg-2">{integration.description}</p>
 

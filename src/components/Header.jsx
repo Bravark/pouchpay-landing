@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <header className="header">
-      <div className="container">
+      <div className="container-nav">
         <div className="header__content">
           {/* Logo */}
           <a href="/" className="header__logo">

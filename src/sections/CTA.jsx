@@ -102,7 +102,7 @@ export default function CTA() {
 
         <div className="cta__copyright">
           <p className="text-body-s fg-4">
-            © 2026 PouchPay. All rights reserved.
+            © 2026 Liquifia Limited. All rights reserved.
           </p>
           <div className="cta__legal">
             <a href="#privacy" className="text-body-s fg-4">Privacy Policy</a>
